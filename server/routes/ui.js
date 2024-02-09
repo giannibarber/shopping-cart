@@ -17,9 +17,8 @@ router.get("/page_with_edit_form", (req, res, next) => {
 });
 
 router.get("/page_without_cart_items", (req, res, next) => {
-  res.sendFile(
-    path.join(__dirname, "../assets/ui/page_without_cart_items.html")
-  );
+  // path.join(__dirname, "../assets/ui/page_without_cart_items.html")
+  res.sendFile(path.join(__dirname, "../../client/src/index.html"));
 });
 
 module.exports = router;
